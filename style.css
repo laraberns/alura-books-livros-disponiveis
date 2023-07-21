@@ -263,9 +263,6 @@ body {
     }
 
     .header {
-      text-align: center;
-      width: 100%;
-      background-color: var(--bg-color);
       margin: 10px
     }
 
@@ -330,6 +327,11 @@ body {
     .rodape {
       margin-top: 0;
     }
+
+    .imgDoHeader{
+      width: 150px;
+    }
+
   }
     
 
