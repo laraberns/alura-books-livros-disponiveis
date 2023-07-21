@@ -289,9 +289,9 @@ body {
 
   @media screen and (max-width: 575px) {
     .livro {
-      width: 130px;
+      width: 180px;
       justify-content: center;
-      height: 400px;
+      height: 350px;
       margin: 0.5em;
     }
   
@@ -305,12 +305,12 @@ body {
     }
 
     .livro__imagens{
-      width: 130px;
+      width: 115px;
      align-self: center;
     }
 
     .livro__descricao {
-      font-size: 15px;
+      font-size: 10px;
       margin: 0.8rem 0;
     }
 
