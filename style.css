@@ -234,7 +234,7 @@ body {
 
     .livro {
       width: 200px;
-      justify-content: center;
+      justify-content: start;
       height: 400px;
       margin: 1em;
     }
@@ -290,8 +290,8 @@ body {
   @media screen and (max-width: 575px) {
     .livro {
       width: 160px;
-      justify-content: center;
-      height: 350px;
+      justify-content: start;
+      height: 355px;
       margin: 0.5em;
     }
   
@@ -330,6 +330,7 @@ body {
     .rodape {
       margin-top: 0;
     }
-    
   }
+    
+
 
