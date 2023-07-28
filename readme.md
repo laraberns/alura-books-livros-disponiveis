@@ -1,8 +1,8 @@
 # Página com estoque de livros - AluraBooks
 
-- Utilizado HTML, CSS e Javascript
+- Utilizado: NodeJS, Json-server, JavaScript, CSS e HTML
 - Responsividade elaborada
-- Utilizado API para Fetch
+- Utilizado API para os dados do projeto
 
 
 ## Autora do projeto:

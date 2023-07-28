@@ -12,6 +12,9 @@
 
 body {
   font-family: 'Poppins';
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .wrap {
@@ -31,6 +34,38 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 278px;
+}
+
+.secao-pesquisa {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.pesquisar-input {
+  width: 300px;
+  height: 40px;
+  border: 2px solid var(--button-color);
+  font-size: 16px;
+  font-family: 'Poppins';
+  padding: 5px 10px;
+  color: var(--text-price-color);
+  border-radius: 8px;
+  background-color: var(--bg-color);
+}
+
+.pesquisar-botao {
+  background-image: url(../imagens/search.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 40px;
+  height: 40px;
+  border: 2px solid var(--button-color);
+  background-color: var(--bg-color);
+  cursor: pointer;
+  border-radius: 8px;
+  float: right;
+  margin-left: 5px;
 }
 
 .nav {
@@ -54,6 +89,7 @@ body {
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
+  white-space: none;
 }
 
 .btn:hover {
@@ -126,7 +162,6 @@ body {
   width: 100%;
   height: 80px;
   background-color: var(--text-description-color);
-  margin-top: 1rem;
   text-align: center;
 
   display: flex;
@@ -139,15 +174,14 @@ body {
   font-weight: 500;
   line-height: 24px;
   font-size: 2.5em;
-} 
+}
 
 .rodape {
   width: 100%;
   height: 104px;
   background: linear-gradient(96.48deg, #002f52 36.3%, #326589 99.56%);
-  margin-top: 1rem;
+  margin-top: auto;
   text-align: center;
-
   display: flex;
   justify-content: center;
   align-items: center;
@@ -157,6 +191,15 @@ body {
   color: #fff;
   font-weight: 500;
   line-height: 24px;
+}
+
+.naoExiste{
+display: flex;
+justify-content: center;
+margin: 30px 20px;
+font-size: 20px;
+color: var(--text-title-color);
+flex-wrap: wrap;
 }
 
 @media screen and (max-width: 1350px) {
@@ -170,16 +213,16 @@ body {
     margin: 0 auto;
   }
 
-  .btn{
+  .btn {
     margin: 1em;
     font-size: 1em;
     height: 7vw;
     width: 15vw;
   }
 
-  .livro__imagens{
+  .livro__imagens {
     width: 200px;
-   align-self: center;
+    align-self: center;
   }
 
   .livros {
@@ -207,132 +250,127 @@ body {
     justify-content: center;
   }
 
-.nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 3rem 0;
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3rem 0;
+  }
+
+  .botoesDeClasse {
+    width: 100vw;
+  }
 }
 
-.botoesDeClasse {
-  width: 100vw;
+@media screen and (max-width: 830px) {
+  .btn {
+    margin: 1em;
+    font-size: 0.8em;
+    height: 7vw;
+    width: 15vw;
+    padding: 0.2px;
+  }
+
+  .livros__disponiveis p {
+    font-size: 1.5em;
+  }
+
+  .livro {
+    width: 200px;
+    justify-content: start;
+    height: 400px;
+    margin: 1em;
+  }
+
+  .livro__titulo {
+    margin-top: 1em;
+    font-size: 14px;
+  }
+
+  .livro__preco {
+    font-size: 15px;
+  }
+
+  .livro__imagens {
+    width: 150px;
+    align-self: center;
+  }
+
+  .livro__descricao {
+    font-size: 15px;
+    margin: 0.8rem 0;
+  }
+
+  .banner {
+    height: 150px;
+  }
+
+  .header {
+    margin: 10px
+  }
+
 }
+
+@media screen and (max-width: 575px) {
+
+  .btn {
+    margin: 0.5em;
+    font-size: 0.7em;
+    height: 15vw;
+    width: 20vw;
+    padding: 0.3em;
   }
 
-  @media screen and (max-width: 830px) {
-    .btn{
-      margin: 1em;
-      font-size: 0.6em;
-      height: 7vw;
-      width: 15vw;
-      padding:0.2px;
-    }
-
-    .livros__disponiveis p {
-      font-size: 1.5em;
-    } 
-
-    .livro {
-      width: 200px;
-      justify-content: start;
-      height: 400px;
-      margin: 1em;
-    }
-  
-    .livro__titulo {
-      margin-top: 1em;
-      font-size: 14px;
-    }
-  
-    .livro__preco {
-      font-size: 15px;
-    }
-
-    .livro__imagens{
-      width: 150px;
-     align-self: center;
-    }
-
-    .livro__descricao {
-      font-size: 15px;
-      margin: 0.8rem 0;
-    }
-
-    .banner {
-      height: 150px;
-    }
-
-    .header {
-      margin: 10px
-    }
-
+  .nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1em 0.5em;
+    height: auto;
   }
 
-  @media screen and (max-width: 575px) {
-    .btn{
-      margin: 0.5em;
-      font-size: 0.5em;
-      height: 10vw;
-      width: 18vw;
-    }
-
-    .nav {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 2em 0;
-    }
+  .livro {
+    width: 160px;
+    justify-content: start;
+    height: 355px;
+    margin: 0.5em;
   }
 
-  @media screen and (max-width: 575px) {
-    .livro {
-      width: 160px;
-      justify-content: start;
-      height: 355px;
-      margin: 0.5em;
-    }
-  
-    .livro__titulo {
-      margin-top: 1em;
-      font-size: 10px;
-    }
-  
-    .livro__preco {
-      font-size: 15px;
-    }
-
-    .livro__imagens{
-      width: 115px;
-     align-self: center;
-    }
-
-    .livro__descricao {
-      font-size: 10px;
-      margin: 0.8rem 0;
-    }
-
-    .tag {
-      font-size: 10px;
-    }
-
-    .wrap {
-      width: 100vw;
-      margin: 0 auto;
-    }
-
-    .livros__disponiveis p {
-      font-size: 1em;
-    } 
-
-    .rodape {
-      margin-top: 0;
-    }
-
-    .imgDoHeader{
-      width: 150px;
-    }
-
+  .livro__titulo {
+    margin-top: 1em;
+    font-size: 10px;
   }
-    
 
+  .livro__preco {
+    font-size: 15px;
+  }
 
+  .livro__imagens {
+    width: 115px;
+    align-self: center;
+  }
+
+  .livro__descricao {
+    font-size: 10px;
+    margin: 0.8rem 0;
+  }
+
+  .tag {
+    font-size: 10px;
+  }
+
+  .wrap {
+    width: 100vw;
+    margin: 0 auto;
+  }
+
+  .livros__disponiveis p {
+    font-size: 1em;
+  }
+
+  .imgDoHeader {
+    width: 150px;
+  }
+
+}
