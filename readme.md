@@ -1,11 +1,34 @@
-# Página com estoque de livros - AluraBooks
+# 📚 AluraBooks
 
-- Utilizado: NodeJS, Json-server, JavaScript, CSS e HTML
-- Responsividade elaborada
-- Utilizado API para os dados do projeto
+Uma aplicação web para exibição e gerenciamento de uma biblioteca de livros, desenvolvida em JavaScript puro. O projeto consome uma API para carregar os livros dinamicamente e oferece funcionalidades como pesquisa, filtros por categoria, ordenação e cálculo do valor total dos livros disponíveis.
 
+## 🚀 Demonstração
 
-## Autora do projeto:
+> Adicione aqui o link do deploy (GitHub Pages, Vercel ou Netlify).
 
-| [<img src="https://media.licdn.com/dms/image/C4D03AQGh9BdP5Om_Rw/profile-displayphoto-shrink_200_200/0/1642126805674?e=1693440000&v=beta&t=TfK03jWv80-quDwb3s7KLhku_IPACHECFTxo79S85V0" width=115><br><sub>Lara Pereira</sub>](https://www.linkedin.com/in/lara-berns-pereira) |    
-| :---: | 
+## ✨ Funcionalidades
+
+- 📖 Listagem dinâmica de livros
+- 🔍 Pesquisa por título
+- 🎯 Filtro por categoria
+  - Front-end
+  - Back-end
+  - Dados
+- ✅ Exibição apenas de livros disponíveis
+- 💰 Ordenação por preço
+- 📊 Soma automática do valor dos livros disponíveis
+- 🎨 Interface responsiva
+
+## 🛠️ Tecnologias
+
+- HTML5
+- CSS3
+- JavaScript (ES6+)
+- Fetch API
+- Manipulação de DOM
+- Array Methods
+  - forEach
+  - map
+  - filter
+  - sort
+  - reduce
