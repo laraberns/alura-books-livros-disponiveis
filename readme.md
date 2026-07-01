@@ -2,10 +2,6 @@
 
 Uma aplicação web para exibição e gerenciamento de uma biblioteca de livros, desenvolvida em JavaScript puro. O projeto consome uma API para carregar os livros dinamicamente e oferece funcionalidades como pesquisa, filtros por categoria, ordenação e cálculo do valor total dos livros disponíveis.
 
-## 🚀 Demonstração
-
-> Adicione aqui o link do deploy (GitHub Pages, Vercel ou Netlify).
-
 ## ✨ Funcionalidades
 
 - 📖 Listagem dinâmica de livros
